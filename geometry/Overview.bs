@@ -952,7 +952,7 @@ must follow these steps:
         {{DOMMatrix}} as appropriate, with the sequence [''1'', ''0'', ''0'', ''1'', ''0'', ''0''].
     : If <var>init</var> is a {{DOMString}}
     ::
-        1. If <a>current global object</a> is not a {{Window}} object, then throw a {{TypeError}}
+        1. If <a>current principal global object</a> is not a {{Window}} object, then throw a {{TypeError}}
             exception.
         2. <a lt="parse a string into an abstract matrix">Parse <var>init</var> into an abstract
             matrix</a>, and let <var>matrix</var> and <var>2dTransform</var> be the result. If the result is
